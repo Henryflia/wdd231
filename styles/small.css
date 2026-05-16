@@ -44,7 +44,7 @@ ul{
     display: none;
     justify-content: space-around;
     background-color: var(--primary-theme);
-    border: 1px solid #000000;
+    border: 1px solid var(--text-color2);
     padding: 0.75rem;
 }
 

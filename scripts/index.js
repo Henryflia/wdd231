@@ -124,10 +124,10 @@ cse.addEventListener("click", () => {
     )
 });
 
-const credits = document.querySelector(".credits");
-for (cont credit of courses) {
-    credit.credits
-}
+// const credits = document.querySelector(".credits");
+// for (cont credit of courses) {
+//     credit.credits
+// }
 
 function renderCourse(course){
     const c = document.querySelector(".courses");

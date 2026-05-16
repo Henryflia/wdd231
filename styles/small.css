@@ -4,13 +4,15 @@
     --third-theme: #fffdd0;
     --fourth-theme: #F5F5F5;
     --text-color: #FFFFFF;
-    --text-color2: black;
+    --text-color2: #000000;
 }
 
 header{
     background-color: var(--primary-theme);
     padding: .95em;
     margin-bottom: -15px;
+    display: grid;
+    grid-template-columns: 35px auto 44px;
 }
 
 .title{
@@ -18,10 +20,6 @@ header{
     font-size: 30px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 35px auto 44px;
-}
 .navigation{
     display: flex;
     align-items: center;
@@ -42,7 +40,6 @@ ul{
     text-align: center;
     color: var(--text-color);
     display: none;
-    justify-content: space-around;
     background-color: var(--primary-theme);
     border: 1px solid var(--text-color2);
     padding: 0.75rem;

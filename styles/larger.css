@@ -1,7 +1,7 @@
 @media screen and (min-width: 1200px) {
     main{
         display: grid;
-        grid-template-columns: auto 1fr 1fe;
+        grid-template-columns: auto 1fr 1fr;
     }
     .navigation a {
         display: block;

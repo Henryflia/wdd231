@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Chmber Project">
+    <meta name="author" content="Henry Tomas Familia Arroyo">
+    <link rel="stylesheet" href="style/small.css">
+    <link rel="stylesheet" href="style/larger.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Chamber of Commerce</title>
 </head>
 <body>
-    <h1>Wdd 231</h1>
+    <header>
+        <img src="images/home.svg" alt="home logo" width="30" height="30">
+        <span class="title">Site</span>
+        <button id="menu" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="box">
+            <h2>About Me</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis quidem repellat culpa! Dolor, consectetur velit? Libero illo repudiandae accusantium, id iusto provident ipsam modi, repellat officia fuga natus eaque!</p>
+            </div>
+        </section>
+        <section class="box">
+            <h2>Student Photo</h2>
+            <div>
+                <img src="images/profile.jpg" alt="hHenry's photo">
+            </div>
+        </section>
+        <section class="box">
+            <h2>Web certificate course</h2>
+            <nav>
+                <ul class="course">
+                    <li><a href="#" id="all" title="All courses">All Courses</a></li>
+                    <li><a href="#" id="wdd" title="Wdd courses">Wdd Courses</a></li>
+                    <li><a href="#" id="cse" title="Cse courses">Cse Courses</a></li>
+                </ul>
+            </nav>
+            <div>The total number of course listed below is <p class="credits"></p></div>
+            <div class="courses"></div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>
+            <img src="images/github.svg" alt="home logo" width="30" height="30">
+            <img src="images/linkedin.svg" alt="home logo" width="30" height="30">
+            <img src="images/instagram-circle.svg" alt="home logo" width="30" height="30">
+        </div>
+
+        <div>
+            &copy; <span id="currentyear"></span> Henry Familia | Dominican Republic
+            Last Modifiction <span id="lastModified"></span>
+        </div>
+
+
+    </footer>
 </body>
 </html>

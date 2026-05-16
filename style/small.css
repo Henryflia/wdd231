@@ -1,0 +1,95 @@
+:root {
+    --primary-theme: #00249c;
+    --secondary-theme: #d8d8d8b7;
+    --third-theme: #fffdd0;
+    --fourth-theme: #F5F5F5;
+    --text-color: #FFFFFF;
+    --text-color2: black;
+}
+
+header{
+    background-color: var(--primary-theme);
+    padding: .95em;
+    margin-bottom: -15px;
+}
+
+.title{
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 35px auto 44px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+
+}
+.navigation li{
+    flex: 1 1 auto;
+    list-style: none;
+
+
+}
+ul{
+    padding: 0;
+    width: 100%;
+}
+.navigation a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    display: none;
+    justify-content: space-around;
+    background-color: var(--primary-theme);
+    border: 1px solid #000000;
+    padding: 0.75rem;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-theme);
+    text-decoration: underline;
+    text-decoration-color: var(--third-theme);
+}
+.open a {
+    display: block;
+}
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+
+.box{
+    background-color: var(--secondary-theme);
+    margin-bottom: 10px;
+}
+
+.box h2{
+    background-color: var(--primary-theme);
+    padding: 0.75rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.box div p {
+    padding: 0.75rem;
+    margin: 0;
+}
+
+.box img{
+    padding: 0.75rem;
+}
+
+footer{
+    background-color: var(--primary-theme);
+    color: var(--text-color);
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 15px;
+}

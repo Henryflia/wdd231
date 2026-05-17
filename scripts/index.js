@@ -131,6 +131,7 @@ cse.addEventListener("click", () => {
 
 function renderCourse(course){
     const c = document.querySelector(".courses");
+    const credits = document.querySelector(".credits");
     let section = ""
 
     for (const info of course) {
@@ -141,4 +142,10 @@ function renderCourse(course){
         `
     }
     c.innerHTML = section
+
+    const totalcredits = course.reduce((total, num) => {
+        return total + num.credits;
+    }, 0)
+
+    credits.textContent = `${totalcredits}`;
 }

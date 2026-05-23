@@ -1,0 +1,13 @@
+{
+  "familyName": "Sariah Lucias",
+  "date": 1999,
+  "familyNumber": 5,
+  "visited": true,
+  "address": {
+    "street": "123 Bedford Road",
+    "city": "Gweru",
+    "state": "Midlands Province",
+    "country": "Zimbabwe",
+    "zip": "00000"
+  }
+}

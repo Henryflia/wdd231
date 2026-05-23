@@ -1,0 +1,74 @@
+{
+    "business": [
+  {
+    "name": "Grupo Ramos",
+    "address": "Av. Winston Churchill, Santo Domingo",
+    "phone": "+1 (809) 472-4444",
+    "website": "https://www.gruporamos.com",
+    "image": "ramos.webp",
+    "membershipLevel": 3,
+    "industry": "Retail",
+    "description": "One of the largest retail companies in the Dominican Republic."
+  },
+  {
+    "name": "Banco Popular Dominicano",
+    "address": "Av. John F. Kennedy, Santo Domingo",
+    "phone": "+1 (809) 544-5000",
+    "website": "https://www.popularenlinea.com",
+    "image": "popular.svg",
+    "membershipLevel": 3,
+    "industry": "Banking",
+    "description": "Leading financial institution offering banking and investment services."
+  },
+  {
+    "name": "Claro Dominicana",
+    "address": "Av. John F. Kennedy, Santo Domingo",
+    "phone": "+1 (809) 220-1111",
+    "website": "https://www.claro.com.do",
+    "image": "claro.webp",
+    "membershipLevel": 3,
+    "industry": "Telecommunications",
+    "description": "Major telecommunications provider in the Dominican Republic."
+  },
+  {
+    "name": "EGE Haina",
+    "address": "Av. Abraham Lincoln, Santo Domingo",
+    "phone": "+1 (809) 535-8888",
+    "website": "https://www.egehaina.com",
+    "image": "haina.webp",
+    "membershipLevel": 2,
+    "industry": "Energy",
+    "description": "Electric power generation company serving the Dominican Republic."
+  },
+  {
+    "name": "Punta Cana Group",
+    "address": "Punta Cana, La Altagracia",
+    "phone": "+1 (809) 959-2262",
+    "website": "https://www.puntacana.com",
+    "image": "punta-cana-group.webp",
+    "membershipLevel": 2,
+    "industry": "Tourism",
+    "description": "Tourism and hospitality company managing resorts and real estate."
+  },
+  {
+    "name": "Helados Bon",
+    "address": "Av. Núñez de Cáceres, Santo Domingo",
+    "phone": "+1 (809) 530-5555",
+    "website": "https://www.bon.com.do",
+    "image": "helados-bon.webp",
+    "membershipLevel": 1,
+    "industry": "Food & Beverage",
+    "description": "Popular Dominican ice cream company with locations nationwide."
+  },
+  {
+    "name": "Casa Brugal",
+    "address": "Puerto Plata",
+    "phone": "+1 (809) 261-2515",
+    "website": "https://www.brugal-rum.com",
+    "image": "beer.webp",
+    "membershipLevel": 2,
+    "industry": "Manufacturing",
+    "description": "Famous Dominican rum producer with international recognition."
+  }
+  ]
+}

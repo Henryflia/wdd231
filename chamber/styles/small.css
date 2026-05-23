@@ -106,51 +106,41 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
     align-items: center;
-
-    section {
-        text-align: center;
-
-        &>* {
+}
+.grid section {
+    text-align: center;
+}
+.grid section  >* {
             margin: 0.1rem;
         }
 
-
-        }
-        #business h2 {
-                    background-color: var(--primary-theme);
-                    border: 1px solid var(--text-color2);
-                    margin: 0;
-                    padding: 0.55rem;
-                    color: var(--text-color);
-                    grid-column: 1/3;
-                    border-radius: 15px 15px 0 0;
-    }
-    #business img {
+.grid #business h2 {
+    background-color: var(--primary-theme);
+    border: 1px solid var(--text-color2);
+    margin: 0;
+    padding: 0.55rem;
+    color: var(--text-color);
+    grid-column: 1/3;
+    border-radius: 15px 15px 0 0;
+}
+.grid #business img {
         grid-column: 1/2;
-    }
-    #business img {
         align-self: start;
         margin-top: 5px;
         grid-row: 2/5;
     }
 
-    #business span {
-        grid-column: 2/3;
-        text-align: left;
-        margin-left: 10px;
+.grid #business span {
+    grid-column: 2/3;
+    text-align: left;
+    margin-left: 10px;
 
     }
 
-
-    img {
-        border: 1px solid #fff;
-        box-shadow: 0 0 1rem #555;
-    }
-
-    #business a{
+.grid #business a{
         display: none;
     }
-    #business section{
+.grid #business section{
     background-color: var(--secondary-theme);
     border: 1px solid var(--text-color2);
     display: grid;
@@ -158,50 +148,49 @@ ul {
     border-radius: 15px;
     margin: 10px;
 }
-}
 
 .list {
     display: flex;
     flex-direction: column;
+}
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
 
-    section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin: 0;
-        padding: 0.25rem;
+.list section > * {
+    margin: 0 1rem;
+}
 
-        &>* {
-            margin: 0 1rem;
-        }
+.list section img {
+    display: none;
+}
 
-        img {
-            display: none;
-        }
+.list section #business h2 {
+    background-color: var(--secondary-theme);
+    font-size: 1rem;
+}
 
-        #business h2 {
-            background-color: var(--secondary-theme);
-            font-size: 1rem;
-        }
+.list section &:nth-child(even) {
+    background-color: var(--secondary-theme);
+}
+    
 
-        &:nth-child(even) {
-            background-color: var(--secondary-theme);
-        }
-    }
-
-    #business a{
+.list #business a{
         display: block;
     }
-    #business .listc{
+.list #business .listc{
         display: none;
     }
-    #business section{
+.list #business section{
     border: 1px solid var(--text-color2);
     margin: 10px;
     }
-    #business span{
+.list #business span{
         margin: 0 0 10px 0;
     }
-}
 
 
 footer {

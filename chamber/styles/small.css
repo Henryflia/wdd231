@@ -61,10 +61,12 @@ ul {
     display: block;
 }
 
-.hamburger{
+button{
     color: var(--text-color);
+    background: none;
     font-size: 30px;
     text-align: center;
+    border: none;
 }
 
 #menu::before {

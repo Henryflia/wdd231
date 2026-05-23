@@ -92,6 +92,7 @@ ul {
     margin: 1rem auto;
     padding: 0.5rem;
     background-color: var(--primary-theme);
+    color: var(--text-color);
     text-align: center;
 }
 .menu button {

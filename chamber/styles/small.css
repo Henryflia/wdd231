@@ -15,6 +15,11 @@ header {
     grid-template-columns: 35px auto 44px;
 }
 
+.navigation a.active {
+    color: var(--primary-theme);
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 .title{
     color: var(--text-color);
@@ -194,6 +199,42 @@ ul {
     }
 
 
+/* Index Page */
+main section {
+    background-color: var(--secondary-theme);
+    border: 1px solid var(--text-color2);
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+main section h2 {
+    background-color: var(--primary-theme);
+    border: 1px solid var(--text-color2);
+    margin: 0;
+    padding: 0.55rem;
+    color: var(--text-color);
+    border-radius: 15px 15px 0 0;
+}
+
+.wcard{
+    text-align: center;
+    color: var(--text-color2);
+}
+
+.wcard .description {
+    text-transform: capitalize;
+    margin: .3rem;
+}
+.wcard .temp {
+    font-size: 20px;
+    margin: .3rem;
+}
+
+.wcard img {
+    width: 120px;
+    margin: 0;
+}
 footer {
     background-color: var(--primary-theme);
     color: var(--text-color);

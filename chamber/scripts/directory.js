@@ -59,3 +59,43 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+
+
+const weather = document.querySelector(".weather");
+const desweather = document.querySelector(".description");
+const temp = document.querySelector(".temp");
+const graphic = document.querySelector(".graphic");
+const weatherimg = document.querySelector(".weather-icon");
+const captionDesc = document.querySelector("figcaption");
+
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.45&lon=-69.93&units=metric&appid=8b1c3cbf4e889a4658d9d8a02813f42f";
+
+async function apiFetch(url) {
+    try {
+        const response = await fetch(url)
+        if (response.ok) {
+          const data = await response.json();
+          displayResults(data)
+            console.log(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+apiFetch(url);
+
+
+function displayResults(data) {
+  weather.innerHTML = data.name;
+  desweather.innerHTML = data.weather[0].description;
+  temp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+  graphic.setAttribute("SRC", iconsrc)
+  graphic.setAttribute("ALT", data.weather[0].description)
+}
+

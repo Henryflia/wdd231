@@ -19,8 +19,14 @@ const card = document.querySelector("#business")
 async function getData() {
   const response = await fetch('data/members.json');
   const data = await response.json(); 
-  displayBusiness(data.business)
-  console.log(data.business); 
+
+  const filteredBusinees = data.business
+    .filter(bs => bs.membershipLevel === 2 || bs.membershipLevel === 3)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3);
+  
+  displayBusiness(filteredBusinees)
+  console.log(filteredBusinees); 
 }
 
 getData();
@@ -36,6 +42,7 @@ const displayBusiness = (business) => {
     <span class="listc"><strong>ADDRESS:</strong> ${bs.address}</span>
     <span class="listc"><strong>URL:</strong> ${bs.website}</span>
     <a href="${bs.website}" target="_blank">Website</a>
+    <span><strong>Membership Level: </strong> ${bs.membershipLevel}</span>
     `;
     card.appendChild(section);
   })

@@ -208,7 +208,7 @@ main section {
 
 }
 
-main section h2 {
+main section .sectiont {
     background-color: var(--primary-theme);
     border: 1px solid var(--text-color2);
     margin: 0;
@@ -234,6 +234,12 @@ main section h2 {
 .wcard img {
     width: 120px;
     margin: 0;
+}
+
+.wcard article span{
+    display: block;
+    margin: 1em;
+    font-size: 20px;
 }
 footer {
     background-color: var(--primary-theme);

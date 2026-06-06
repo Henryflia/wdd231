@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A page to supporting business growth, networking, and economic development in Santo Domingo and the Dominican Republic">
+    <meta name="author" content="Henry Familia">
+    <meta property="og:title" content="Santo Domingo Chamber of Commerce">
+    <meta property="og:description"
+        content="Supporting business growth, networking, and economic development in Santo Domingo and the Dominican Republic.">
+    <meta property="og:url" content="https://Henryflia.github.io/wdd231/index.html">
+    <meta property="og:image" content="https://Henryflia.github.io/wdd231/chamber/images/skyline.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Santo Domingo Chamber Join</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="home logo" width="40" height="40">
+        <span class="title">Santo Domingo Chamber of Commerce</span>
+        <button id="menu" class="hamburger" aria-label="navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="directory.html" class="chamber">Directory</a></li>
+                <li><a href="join.html" class="join">Join</a></li>
+                <li><a href="#" class="final">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join The Chamber</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Infomation</legend>
+                    <label for="fname">First Name: <input type="text" title="firstname" name="fname" id="fname" autocomplete="given-name" required></label>
+                    <label for="lname">Last Name: <input type="text" title="lastname" name="lname" id="lname" autocomplete="family-name" required></label>
+                    <label for="email">Email Address: <input type="email" title="emailadress" name="email" id="email" autocomplete="email" placeholder="someone@gmail.com" required></label>
+                    <label for="phone">Phone Number: <input type="tel" title="phonenumber" name="phone" id="phone" autocomplete="tel" placeholder="111-222-3333" required></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Bussines Informarion</legend>
+                    <label for="lname">Organization Title: <input type="text" title="organization" name="otile" id="otile"
+                            autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
+                    <label for="businessname">Business/Organization's name: <input type="text" title="business" name="businessname" id="businessname" autocomplete="organization" required></label>
+                    <label>Business/organization's description <input type="area" title="organization-description"
+                                        name="description"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" id="m1" required>NP Membership (Non Profit)</label>
+                <label><input type="radio" name="membership" id="m2" required>Bronze Membership</label>
+                <label><input type="radio" name="membership" id="m3" required>Silver Membership</label>
+                <label><input type="radio" name="membership" id="m4" required>Gold Membership</label>
+            </fieldset>
+
+
+            <label><input type="hidden" name="timestamp" id="timestamp"></label>
+            <input type="submit" value="Join the Chamber">
+        </form>
+
+        <span>Membership Levels</span>
+        <div>Not Profit Membership Level
+            <button class="openModal">Learn More</button>
+            <dialog class="modal">
+                <h2>Not Profit Membership Level</h2>
+                <p></p>
+                <button class="closeModal">Close</button>
+            </dialog>
+        </div>
+        <!-- <div>Bronze Membership
+            <button>Learn More</button>
+            <dialog class="modal">
+                <h2>Bronze Membership</h2>
+                <button class="closeModal">Close</button>
+            </dialog>
+        </div>
+        <div>Silver Membership
+            <button>Learn More</button>
+            <dialog class="modal">
+                <h2>Silver Membership</h2>
+                <button class="closeModal">Close</button>
+            </dialog>
+        </div>
+        <div>Gold Membership
+            <button>Learn More</button>
+            <dialog class="modal">
+                <h2>Gold Membership</h2>
+                <button class="closeModal">X</button>
+            </dialog>
+        </div> -->
+
+    </main>
+    <footer>
+        <div>
+            <span class="title">Santo Domingo Chamber of Commerce</span>
+            <p>Doctor Teofilo Ferry</p>
+            <p>Santo Domingo, Dom. Rep.</p>
+            <p>hfamilia@gmail.com</p>
+            <p>(829) 550-2050</p>
+        </div>
+        <div>
+            <img src="images/youtube.svg" alt="home logo" width="50" height="50">
+            <img src="images/linkedin.svg" alt="home logo" width="50" height="50">
+            <img src="images/github.svg" alt="home logo" width="50" height="50">
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Henry Familia</p>
+            <p>&copy; <span id="currentyear"></span> Santo Domingo Chamber of Commerce</p>
+            <p>Last Modifiction <span id="lastModified"></span></p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

@@ -16,7 +16,8 @@ header {
 }
 
 .navigation a.active {
-    color: var(--primary-theme);
+    color: var(--third-theme);
+    background-color: var(--secondary-theme);
     text-decoration: underline;
     font-weight: bold;
 }
@@ -84,7 +85,7 @@ ul {
 }
 
 .link{
-    
+
 }
 
 /* Main */
@@ -243,6 +244,27 @@ main section .sectiont {
     margin: 1em;
     font-size: 20px;
 }
+
+
+/* Join Page */
+
+dialog{
+    width: 400px;
+    height: 300px;
+    background-color: var(--fourth-theme);
+    border: 1px solid var(--text-color2);
+    border-radius:5px ;
+}
+::backdrop{
+    background-color: color-mix(in srgb, var(--secondary-theme) 50%, transparent);
+}
+
+dialog[open] {
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
 footer {
     background-color: var(--primary-theme);
     color: var(--text-color);

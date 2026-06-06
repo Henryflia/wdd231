@@ -139,6 +139,31 @@ ul{
 .web h2{
     margin-bottom: 30px;
 }
+
+
+
+dialog{
+    background-color: var(--secondary-theme);
+    color: var(--text-color2);
+    padding: 1em;
+    width: 90%;
+    border: .25rem;
+    max-width: 600px;
+    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+}
+
+::backdrop{
+    background-color: rgb(0 0 0 / 50%);;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
 footer{
     background-color: var(--primary-theme);
     color: var(--text-color);

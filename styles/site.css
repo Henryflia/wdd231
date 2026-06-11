@@ -1,0 +1,72 @@
+:root {
+    --primary-theme: #2E7D32;
+    --secondary-theme: #66BB6A;
+    --third-theme: #fffdd0;
+    --fourth-theme: #F5F5F5;
+    --text-color: #FFFFFF;
+    --text-color2: black;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* header */
+
+
+header {
+    background-color: var(--primary-theme);
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+header h1 {
+    display: block;
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 1rem;
+}
+
+/* main */
+main {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    border: 1px solid var(--text-color2);
+}
+
+h2 {
+    background-color: var(--secondary-theme);
+    padding: 1rem;
+    border: 1px solid var(--text-color2);
+    margin: 0;
+}
+
+p {
+    padding: 1rem;
+    margin: 0;
+}
+
+section {
+    background-color: var(--third-theme);
+
+}
+
+
+
+/* footer */
+footer {
+
+    background-color: var(--primary-theme);
+    font-size: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+footer p {
+    margin: 0px;
+    padding: .30rem;
+}

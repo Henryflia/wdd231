@@ -39,22 +39,22 @@ const discovery = [
     address: "Av. España, Santo Domingo Este",
     description:
       "An educational and recreational center where visitors can observe Caribbean marine species.",
-    image: "acuario.webp"
+    image: "acuarium.webp"
   },
   {
     name: "Columbus Lighthouse",
     address: "Av. España, Santo Domingo Este",
     description:
       "A monument built in honor of Christopher Columbus with cultural exhibits.",
-    image: "faro-colon.webp"
+    image: "columbus.webp"
   },
   {
     name: "Mirador Sur Park",
     address: "Av. Mirador Sur, Santo Domingo",
     description:
       "An urban park with green spaces, trails, and areas for outdoor activities.",
-    image: "mirador-sur.webp"
+    image: "mirador.webp"
   }
 ];
 
-export default attractions;
+export default discovery;

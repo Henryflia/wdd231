@@ -265,6 +265,32 @@ dialog[open] {
     border: 1px solid rgb(0 0 0 / 0.1);
 }
 
+/* Discory Page */
+
+.disc img{
+    grid-area: image;
+
+}
+
+.disc section{
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "desc"
+    "adress";
+}
+
+.disc h2{
+    grid-area: name;
+}
+.disc .listc {
+    grid-area: adress;
+}
+.disc p {
+    grid-area: desc;
+}
 footer {
     background-color: var(--primary-theme);
     color: var(--text-color);

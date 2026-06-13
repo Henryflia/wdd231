@@ -259,11 +259,6 @@ dialog{
     background-color: color-mix(in srgb, var(--secondary-theme) 50%, transparent);
 }
 
-dialog[open] {
-    background-color: beige;
-    border-radius: 10px;
-    border: 1px solid rgb(0 0 0 / 0.1);
-}
 
 /* Discory Page */
 
@@ -284,12 +279,20 @@ dialog[open] {
 
 .disc h2{
     grid-area: name;
+    margin-left: 10px;
+
+   
 }
 .disc .listc {
     grid-area: adress;
+    margin-bottom: 25px;
+    margin-left: 10px;
+
 }
 .disc p {
     grid-area: desc;
+    margin-bottom: 25px;
+    margin-left: 10px;
 }
 footer {
     background-color: var(--primary-theme);

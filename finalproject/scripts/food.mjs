@@ -4,7 +4,7 @@ export async function loadFoods() {
   try {
     const response = await fetch("scripts/foods.json")
     allFoods = await response.json();
-    renderTemples(allFoods)
+    renderFoods(allFoods)
     filterFood();
   } catch (err) {
     console.error("Failed to load food data:", err);
@@ -12,7 +12,7 @@ export async function loadFoods() {
   
 }
 
-export function renderTemples(food) {
+export function renderFoods(food) {
   const container = document.querySelector(".food");
   if (!container) return;
 
@@ -41,7 +41,7 @@ export function filterFood() {
     if (all) {
     all.addEventListener("click", (e) => {
       e.preventDefault();
-      renderTemples(allFoods)
+      renderFoods(allFoods)
       })
   }
 
@@ -49,7 +49,7 @@ export function filterFood() {
     if (fruits) {
     fruits.addEventListener("click", (e) => {
       e.preventDefault();
-      renderTemples(allFoods.filter(food => {const fruitssec = food.type
+      renderFoods(allFoods.filter(food => {const fruitssec = food.type
 
         return fruitssec === "fruit";
       })
@@ -60,7 +60,7 @@ export function filterFood() {
   if (vege) {
     vege.addEventListener("click", (e) => {
       e.preventDefault();
-      renderTemples(allFoods.filter(food => {
+      renderFoods(allFoods.filter(food => {
         const vegesec = food.type
 
         return vegesec === "vegetable";

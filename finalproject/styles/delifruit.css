@@ -104,20 +104,6 @@ main {
     margin: 0;
 }
 
-.fruit-border {
-    border: 3px solid #2E7D32;
-    /* verde */
-}
-
-.vegetable-border {
-    border: 3px solid #1565C0;
-    /* azul */
-}
-
-.mixed-border {
-    border: 3px solid #EF6C00;
-    /* naranja */
-}
 
 #fruits{
     display: block;
@@ -173,7 +159,7 @@ main {
     padding: .75rem;
     text-decoration: none;
     color: var(--text-color);
-    background-color: #2E7D32;
+    background-color: var(--secondary-theme);
 
 }
 
@@ -254,7 +240,7 @@ main {
     padding: 0;
     max-width: 480px;
     width: 90%;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px var(--text-color2);
 }
 
 #food-modal::backdrop {
@@ -274,7 +260,7 @@ main {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    color: var(--text-color2);
     line-height: 1;
 }
 
@@ -297,7 +283,7 @@ main {
 .modal-description {
     font-size: 0.9rem;
     margin-bottom: 0.75rem;
-    color: #444;
+    color: var(--text-color2);
 }
 
 .modal-details {
@@ -309,7 +295,7 @@ main {
 
 .modal-details li {
     padding: 0.25rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--fourth-theme);
 }
 
 .modal-details li:last-child {

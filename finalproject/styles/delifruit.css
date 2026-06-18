@@ -4,7 +4,10 @@
     --third-theme: #fffdd0;
     --fourth-theme: #F5F5F5;
     --text-color: #FFFFFF;
-    --text-color2: black;
+    --text-color2: #000000;
+    --error-color: #CC0000;
+    --valid-color: #2E7D32;
+    --backdrop-color: #0000008C;
 }
 
 body {
@@ -22,7 +25,7 @@ header h1 {
 }
 
 .navigation a.active {
-    color: var(--third-theme);
+    color: var(--text-color2);
     background-color: var(--secondary-theme);
     text-decoration: underline;
     font-weight: bold;
@@ -159,8 +162,7 @@ main {
     padding: .75rem;
     text-decoration: none;
     color: var(--text-color);
-    background-color: var(--secondary-theme);
-
+    background-color: var(--primary-theme);
 }
 
 
@@ -211,11 +213,11 @@ main {
 }
 
 .wf1 input:required {
-    border-left: solid 8px red;
+    border-left: solid 8px var(--error-color);
 }
 
 .wf1 input:required:valid {
-    border-left: solid 8px green;
+    border-left: solid 8px var(--valid-color);
 }
 
 .formtitle{
@@ -244,7 +246,7 @@ main {
 }
 
 #food-modal::backdrop {
-    background: rgba(0, 0, 0, 0.55);
+    background: var(--backdrop-color);
 }
 
 .modal-content {
@@ -300,6 +302,14 @@ main {
 
 .modal-details li:last-child {
     border-bottom: none;
+}
+
+/* attributions page */
+.attributions-main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: left;
 }
 
 /* footer */

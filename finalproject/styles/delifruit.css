@@ -1,0 +1,331 @@
+:root {
+    --primary-theme: #2E7D32;
+    --secondary-theme: #66BB6A;
+    --third-theme: #fffdd0;
+    --fourth-theme: #F5F5F5;
+    --text-color: #FFFFFF;
+    --text-color2: black;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+
+/* header */
+header h1 {
+    display: block;
+    color: var(--text-color);
+    font-size: 20px;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.navigation a.active {
+    color: var(--third-theme);
+    background-color: var(--secondary-theme);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header {
+    background-color: var(--primary-theme);
+    text-align: center;
+    color: var(--text-color);
+
+}
+ /* Hambuerguer  */
+#menu {
+    border: 0;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 25px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    list-style: none;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-theme);
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+nav ul li:hover {
+    background-color: var(--third-theme);
+       
+}
+ul.navigation {
+    color: var(--text-color);
+    padding: 0;
+}
+
+.navigation a {
+    font-weight: 700;
+    display: none;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-theme);
+    text-decoration: underline;
+    text-decoration-color: var(--third-theme);
+}
+
+.open a {
+    display: block;
+}
+
+/* main */
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+.heroimg{
+    width: 100%;
+    margin: 0;
+}
+
+.fruit-border {
+    border: 3px solid #2E7D32;
+    /* verde */
+}
+
+.vegetable-border {
+    border: 3px solid #1565C0;
+    /* azul */
+}
+
+.mixed-border {
+    border: 3px solid #EF6C00;
+    /* naranja */
+}
+
+#fruits{
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--primary-theme), var(--secondary-theme));
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90px;
+    margin-right: 30px;
+    box-shadow: 1px 1px 4px var(--fourth-theme);
+
+}
+
+#vege {
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--primary-theme), var(--secondary-theme));
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90px;
+    box-shadow: 1px 1px 4px var(--fourth-theme);
+}
+.linkfruit{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    list-style: none;
+    
+}
+/* ----------------------Plan section--------------------------- */
+
+.divp{
+    border: 1px solid var(--secondary-theme);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divp img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.plans{
+    display: block;
+}
+
+.links{
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+    padding: .75rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: #2E7D32;
+
+}
+
+
+/* --------------------- Fruit and Vege Page----------------------- */
+
+.foodcart{
+    border: 3px solid var(--secondary-theme);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.foodcart img{
+    width: 100%;
+}
+.food{
+    display: block;
+}
+
+/* ------Form------- */
+
+.wf1 legend,
+.wf1 label{
+    display: block;
+    text-align: left;
+    padding-top: .5rem;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="textarea"],
+.wf1 input[type="date"],
+.wf1 input[type="email"],
+.wf1 input[type="number"],
+.wf1 select,
+.wf1 textarea{
+    
+    display: block;
+    background-color: var(--fourth-theme);
+    border: solid 1px var(--text-color2);
+    border-radius: 2px;
+    padding: .75rem;
+    color: var(--primary-theme);
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+}
+
+.wf1 input:required {
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px green;
+}
+
+.formtitle{
+    display: block;
+    text-align: left;
+}
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--primary-theme), var(--secondary-theme));
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px var(--fourth-theme);
+}
+/* ---- Modal ---- */
+#food-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+#food-modal::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.modal-content {
+    padding: 1.25rem;
+    text-align: left;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--primary-theme);
+}
+
+.modal-title {
+    margin: 0 0 0.75rem;
+    color: var(--primary-theme);
+    font-size: 1.4rem;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.modal-description {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    color: #444;
+}
+
+.modal-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.modal-details li {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-details li:last-child {
+    border-bottom: none;
+}
+
+/* footer */
+footer {
+
+    background-color: var(--primary-theme);
+    font-size: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+footer p {
+    margin: 0px;
+    padding: .30rem;
+}

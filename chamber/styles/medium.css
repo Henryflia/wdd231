@@ -8,6 +8,13 @@
     
         .effects:hover {
         box-shadow: 0 0 50px var(--text-color2);
-}
+
+    
+    }
+
+    .disc img{
+        max-width: 300px;
+        height: 100%;
+    }
 
 }

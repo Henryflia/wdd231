@@ -1,6 +1,6 @@
 :root {
     --primary-theme: #00249c;
-    --secondary-theme: #d8d8d8b7;
+    --secondary-theme: #aeaeaeb7;
     --third-theme: #fffdd0;
     --fourth-theme: #F5F5F5;
     --text-color: #FFFFFF;
@@ -84,9 +84,6 @@ ul {
     content: "X";
 }
 
-.link{
-
-}
 
 /* Main */
 .hero{
@@ -264,10 +261,13 @@ dialog{
 
 .disc img{
     grid-area: image;
-
+    width: 100%;
+    
+    justify-content: center;
 }
 
 .disc section{
+    background-color: var(--fourth-theme);
     overflow: hidden;
     display: grid;
     grid-template-areas: 

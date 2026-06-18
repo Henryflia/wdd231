@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delifruit - Subscribe to a Weekly Plan</title>
+  <meta name="description" content="Sign up for a weekly Delifruit subscription plan. Choose fruits, vegetables, or a mixed box delivered fresh to your door.">
+  <meta name="author" content="Henry Tomas Familia Arroyo">
+  <meta property="og:title" content="Delifruit - Start Your Subscription">
+  <meta property="og:description" content="Subscribe to weekly fresh organic fruit and vegetable delivery. Plans start at $15/week.">
+  <meta property="og:url" content="https://henryflia.github.io/wdd231/finalproject/subscribe.html">
+  <meta property="og:image" content="https://henryflia.github.io/wdd231/finalproject/images/mixed.webp">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/delifruit.css">
+  <link rel="stylesheet" href="styles/delifruit-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="scripts/delifruit.mjs" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="course-title">Delifruit</h1>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="fruits.html" title="Food">Food</a></li>
+                <li><a class="active" href="subscribe.html" title="Subscribes">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    
+        <form method="get" action="review.html" class="wf1">
+            <fieldset> 
+                <legend>Personal Information</legend>
+                <label for="fname">First Name*: <input type="text" id="fname" name="fname" autocomplete="given-name" required></label>
+                <label for="lname">Last Name*:<input type="text" id="lname" name="lname" autocomplete="family-name"  required></label>
+                <label for="email">Email*:<input type="email" id="email" placeholder="someone@gmail.com" name="email" autocomplete="email" required></label>
+                <label for="number">Phone*: <input type="tel" id="number" placeholder="1235556789" name="phone" autocomplete="tel"  required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Address</legend>
+                <label for="address">Street Address* <input type="text" id="address" name="address" autocomplete="street-address" required></label>
+                <label for="city">City* <input type="text" id="city" name="city" autocomplete="address-level2" required></label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Subscription Plan*</legend>
+                <label for="p1"><input type="radio" id="p1" name="plan" value="fruits" required>Fruits Plan</label>
+                <label for="p2"><input type="radio" id="p2" name="plan" value="vegetables">Vegetables Plan</label>
+                <label for="p3"><input type="radio" id="p3" name="plan" value="mixed">Mix Fruits/Vegetables Plan</label>
+
+                <div class="formtitle">Extras (optional)</div>
+                <label for="organic"><input type="checkbox" id="organic" name="organics" value="organic">Organic products only</label>
+                <label for="extra"><input type="checkbox" id="extra" name="extra" value="extra">Extra fruits/vegetables (+$10)</label>
+                <label for="seasonal"><input type="checkbox" id="seasonal" name="seasonal" value="seasonal">Seasonal Box</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Allergies or Restrictions</legend>
+                <label for="restrictions">Do you have any allergies or foods to avoid? (optional) <textarea name="restrictions" id="restrictions"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Schedule</legend>
+                <label for="date">Preferred Delivery Date<input type="date" id="date" name="delivery" required></label>
+                <div class="formtitle">Preferred Time</div>
+                <label for="morning"><input type="checkbox" name="morning" id="morning"> Morning</label>
+                <label for="afternoon"><input type="checkbox" name="afternoon" id="afternoon"> Afternoon</label>
+            </fieldset>
+            <input type="submit" value="Start My Plan">
+
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> - Henry Tomas Familia Arroyo - Dominican Republic</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a> | <a href="https://youtu.be/placeholder" target="_blank" rel="noopener">Video Demo</a></p>
+    </footer>
+</body>
+
+</html>

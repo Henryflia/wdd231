@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delifruit - Fresh Organic Fruit & Vegetable Delivery</title>
+    <meta name="description"
+        content="Delifruit delivers fresh, organic fruits and vegetables straight to your door. Choose from our Fruits, Vegetables, or Mixed weekly subscription plans.">
+    <meta name="author" content="Henry Tomas Familia Arroyo">
+    <meta property="og:title" content="Delifruit - Fresh Organic Delivery">
+    <meta property="og:description"
+        content="Weekly boxes of fresh, organic fruits and vegetables delivered to your door in the Dominican Republic.">
+    <meta property="og:url" content="https://henryflia.github.io/wdd231/finalproject/index.html">
+    <meta property="og:image" content="https://henryflia.github.io/wdd231/finalproject/images/hero-large.webp">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/delifruit.css">
+    <link rel="stylesheet" href="styles/delifruit-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/delifruit.mjs" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="course-title">Delifruit</h1>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a class="active" href="index.html" title="Home">Home</a></li>
+                <li><a href="fruits.html" title="Food">Food</a></li>
+                <li><a href="subscribe.html" title="Subscribes">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <picture id="hero">
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+            <img class="heroimg" src="images/hero.webp" alt="Photo by Viktoria  Slowikowska: https://www.pexels.com/photo/sliced-fruits-on-wooden-surface-5677308/" loading="lazy">
+        </picture>
+
+        <section>
+            <h2>Our Subscription Plans</h2>
+
+            <div class="divp">
+                <img src="images/fruits.webp" alt="Photo by Wellington Fernandes: https://www.pexels.com/photo/vibrant-fruit-display-at-a-market-stall-30505135/" loading="lazy">
+                <section class="plans">
+                    <h3>Fruits Plan</h3>
+                    <p>Apple, Banana, Mango, Orange, Pineapple, Grapes, Strawberry, Watermelon, Papaya, Avocado
+                    </p>
+                    <p>✔ Fresh
+                    ✔ Organic</p>
+                    <p>$15/week</p>
+                    <a class="links" href="subscribe.html" >Subscribe to Fruits Plan</a>
+            </section>
+            </div>
+            <div class="divp">
+                <img src="images/vegetables.webp" alt="Photo by Viktoria  Slowikowska: https://www.pexels.com/photo/green-vegetable-and-fruits-on-a-wooden-table-5677797/" loading="lazy">
+                <section class="plans">
+                    <h3>Vegetables Plan</h3>
+                    <p>Example: Carrot, Broccoli, Tomato, Lettuce, Bell Pepper, Cucumber, Spinach, Onion, Garlic, Zucchini</p>
+                    <p>✔ Fresh
+                        ✔ Organic</p>
+                    <p>$15/week</p>
+                    <a class="links" href="subscribe.html">Subscribe to Vegetables Plan</a>
+                </section>
+            </div>
+            
+            <div class="divp">
+                <img src="images/mixed.webp" alt="Photo by Pixabay: https://www.pexels.com/photo/variety-of-fruits-and-vegetables-264537/" loading="lazy">
+                <section class="plans">
+
+                
+                <h3>Mixed Plan</h3>
+                <p>Example: Apple, Banana, Carrot, Broccoli, Tomato, Lettuce, Mango, Cucumber, Spinach, Orange</p>
+                <p>✔ Fresh
+                    ✔ Organic</p>
+                <p>$15/week</p>
+                <a class="links" href="subscribe.html">Subscribe to Mixed Plan</a>
+                </section>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> - Henry Tomas Familia Arroyo - Dominican Republic</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Attributions</a> | <a href="https://youtu.be/placeholder" target="_blank"rel="noopener">Video Demo</a></p>
+    </footer>
+</body>
+
+</html>
